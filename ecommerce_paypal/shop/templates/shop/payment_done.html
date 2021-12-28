@@ -1,0 +1,21 @@
+{% extends 'shop/basic.html' %}
+
+{% block content %}
+
+    <p>Payment done.</p>
+
+{% endblock %}
+
+
+{% block JS %}
+<script>
+
+    {% if thank %}
+    
+    localStorage.clear();
+
+    {% endif %}
+</script>
+
+
+{% endblock  %}

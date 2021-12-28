@@ -1,0 +1,22 @@
+
+
+{% block content %}
+
+    <p>Payment done.</p>
+
+{% endblock %}
+
+
+{% block JS %}
+<script>
+
+    {% if thank %}
+    
+    localStorage.clear();
+    document.location = "/myapp/home/";
+
+    {% endif %}
+</script>
+
+
+{% endblock  %}
